@@ -1,0 +1,24 @@
+@mixin bord ($color) {
+  border: 3px $color solid;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: darkblue;
+  //background-color: lightgrey;
+}
+body *{
+  box-sizing: border-box;
+}
+
+.site-wrapper{
+  max-width: 1438px;
+  width: 95%;
+  margin: 0 auto;
+  height: 10150px;
+  @include bord (black);
+}
+.header{
+  @include bord(pink);
+  height: 85px;
+  width: 100%;
+}

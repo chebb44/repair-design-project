@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.site-wrapper {
+  max-width: 1438px;
+  width: 95%;
+  margin: 0 auto;
+  height: 10150px;
+  border: 3px black solid;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: darkblue;
+}
+
+.header {
+  border: 3px pink solid;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: darkblue;
+  height: 85px;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
