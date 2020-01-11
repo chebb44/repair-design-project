@@ -33,6 +33,7 @@ a:hover {
 
 .site-wrapper {
   width: 100%;
+  min-width: 375px;
   margin: 0 auto;
 }
 
