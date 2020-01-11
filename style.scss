@@ -11,19 +11,23 @@
 
 body *{
   box-sizing: border-box;
+ 
+}
+
+
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover{
+      transform: scale(1.1);
+    }
 }
 
 .upper-case{
   text-transform: uppercase;
 }
 
-a{
-  text-decoration: none;
-  text-transform: uppercase;
-  &:hover{
-    transform: scale(1.1);
-  }
-}
+ 
 
 .button-type {
   display: inline-block;
@@ -124,10 +128,7 @@ a{
     
     .sidebar-text{
       margin: auto;
-      color: #E3B873;
       transform: rotate(90deg);
-      font-family: FuturaDemiC;
-      font-size: 14px;
       padding-right: 60px;
       &::after{
         content: '';
@@ -137,6 +138,11 @@ a{
         height: 2px;
         width: 50px;
         background-color: #E3B873;
+      }
+      .insta-link{
+        color: #E3B873;
+        font-family: FuturaDemiC;
+        font-size: 14px;
       }
     }
   }

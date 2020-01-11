@@ -3,18 +3,18 @@ body * {
           box-sizing: border-box;
 }
 
-.upper-case {
-  text-transform: uppercase;
-}
-
-a {
+.link {
   text-decoration: none;
   text-transform: uppercase;
 }
 
-a:hover {
+.link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.upper-case {
+  text-transform: uppercase;
 }
 
 .button-type {
@@ -142,11 +142,8 @@ a:hover {
 
 .flex-container_one .sidebar-left .sidebar-text {
   margin: auto;
-  color: #E3B873;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  font-family: FuturaDemiC;
-  font-size: 14px;
   padding-right: 60px;
 }
 
@@ -158,6 +155,12 @@ a:hover {
   height: 2px;
   width: 50px;
   background-color: #E3B873;
+}
+
+.flex-container_one .sidebar-left .sidebar-text .insta-link {
+  color: #E3B873;
+  font-family: FuturaDemiC;
+  font-size: 14px;
 }
 
 .flex-container_one .content-section {

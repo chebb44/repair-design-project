@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .site-wrapper{
+    width: 375px;
+  }
   .header {
     .nav-link{
       display: none;
@@ -23,5 +26,47 @@
       font-size: 13px;
     }
   }
-  
+  .flex-container_one{ 
+    .sidebar-left{
+      display: none;
+    }
+    .content-section{
+      .content-container{
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+        height: 400px;
+        left:0px;
+        top:85px;
+        
+        .text-head{
+          font-size: 23px;
+          line-height: 40px;
+        }
+        .text-block{
+          font-size: 18px;
+          line-height: 30px;
+        }
+        .button-flex-container{
+          width: 100%;
+          height: 130px;
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-content: space-between;
+          .button-type_one{
+            width: 80%;
+            height: 51px;
+            line-height: 51px;
+            &:nth-of-type(2){
+              background: none;
+              border: 1px solid #FFFFFF;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
