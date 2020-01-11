@@ -11,9 +11,6 @@
 }
 
 @media screen and (max-width: 850px) {
-  .site-wrapper {
-    width: 375px;
-  }
   .header .nav-link {
     display: none;
   }
@@ -24,24 +21,32 @@
   .header h1, .header .phone-link {
     font-size: 13px;
   }
+  .flex-container_one {
+    height: 480px;
+  }
   .flex-container_one .sidebar-left {
     display: none;
   }
+  .flex-container_one .content-section {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("assets/image 4.7.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("assets/image 4.7.png");
+  }
   .flex-container_one .content-section .content-container {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     width: 100%;
-    height: 400px;
     left: 0px;
     top: 85px;
   }
   .flex-container_one .content-section .content-container .text-head {
     font-size: 23px;
     line-height: 40px;
+    padding-right: 35px;
   }
   .flex-container_one .content-section .content-container .text-block {
     font-size: 18px;
     line-height: 30px;
+    padding-right: 75px;
   }
   .flex-container_one .content-section .content-container .button-flex-container {
     width: 100%;
@@ -59,7 +64,7 @@
         align-content: space-between;
   }
   .flex-container_one .content-section .content-container .button-flex-container .button-type_one {
-    width: 80%;
+    width: 100%;
     height: 51px;
     line-height: 51px;
   }

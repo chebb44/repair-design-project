@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 850px) {
   .site-wrapper{
-    width: 375px;
+    //width: 375px;
   }
   .header {
     .nav-link{
@@ -27,25 +27,28 @@
     }
   }
   .flex-container_one{ 
+    height: 480px;
     .sidebar-left{
       display: none;
     }
     .content-section{
+      background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('assets/image\ 4.7.png');
       .content-container{
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
         width: 100%;
-        height: 400px;
         left:0px;
         top:85px;
         
         .text-head{
           font-size: 23px;
           line-height: 40px;
+          padding-right: 35px;
         }
         .text-block{
           font-size: 18px;
           line-height: 30px;
+          padding-right: 75px;
         }
         .button-flex-container{
           width: 100%;
@@ -56,7 +59,7 @@
           flex-wrap: wrap;
           align-content: space-between;
           .button-type_one{
-            width: 80%;
+            width: 100%;
             height: 51px;
             line-height: 51px;
             &:nth-of-type(2){
