@@ -18,5 +18,8 @@
     color: white;
     text-decoration: none;
   }
+  .header h1, .header .phone-link {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=media.css.map */

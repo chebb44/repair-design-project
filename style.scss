@@ -42,6 +42,7 @@ a{
 .site-wrapper{
   //width: 1440px;
   width: 100%;
+  max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
   //height: 10150px;
@@ -77,6 +78,7 @@ a{
     margin-right: 5px;
   }
   .nav-link{
+    font-size: 15px;
     font-family: FuturaBookC;
     color: white;
     flex-shrink: 0;
@@ -85,6 +87,7 @@ a{
   }
   h1{
     color: #E3B873;
+    font-size: 15px;
     font-family: FuturaDemiC;
     flex-shrink: 0;
     margin-left: 5px;
@@ -94,6 +97,7 @@ a{
     color: #E3B873;
   }
   .phone-link{
+    font-size: 15px;
     color: #E3B873;
     font-family: FuturaDemiC;
     text-decoration: underline;
@@ -104,20 +108,86 @@ a{
 }
 
 .flex-container_one{
-  @include bord(green);
+  //@include bord(green);
   width: 100%;
   height: 707px;
   display: flex;
+  .sidebar-left{
+    //@include bord(brown);
+    width: 82px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+    
+    .sidebar-text{
+      margin: auto;
+      color: #E3B873;
+      transform: rotate(90deg);
+      font-family: FuturaDemiC;
+      font-size: 14px;
+      padding-right: 60px;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: 0px;
+        height: 2px;
+        width: 50px;
+        background-color: #E3B873;
+      }
+    }
+  }
   .content-section{
-    @include bord(rgb(209, 62, 62));
+    //@include bord(rgb(209, 62, 62));
     margin-left: auto;
     flex-basis: 1358px;
-  }
-  .sidebar-left{
-    @include bord(brown);
-    flex-basis: 82px;
-    flex-shrink: 0;
-  }
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('assets/image\ 4.3.png');
+    background-size: cover;
+      .content-container{
+        position: relative;
+        width: 540px;
+        height: 400px;
+        top: 195px;
+        left: 60px;
+        
+        .text-head{
+          font-family: Yeseva One;
+          font-size: 40px;
+          color: white;
+          line-height: 53px;
+          span{
+            color: #E3B873;
+          }
+        }
+        .text-block{
+          font-family: FuturaBookC;
+          font-size: 22px;
+          line-height: 30px;
+          color: white;
+        }
+        .button-flex-container{
+          margin-top: 40px;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          .button-type_one{
+            width: 207px;
+            height: 51px;
+            line-height: 51px;
+            &:nth-of-type(2){
+              margin-left: 20px;
+              background: none;
+              border: 1px solid #FFFFFF;
+            }
+          }
+        }
+      }
+    }
 }
 
 .flex-container_two{

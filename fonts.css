@@ -8,3 +8,8 @@
     font-family: FuturaBookC;
     src: url(assets/Futurabookc.otf);
 }
+
+@font-face {
+    font-family: Yeseva One;
+    src: url(assets/YesevaOne-Regular_v2.otf);
+}
