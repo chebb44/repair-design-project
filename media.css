@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .site-wrapper {
+    width: 375px;
+  }
   .header .nav-link {
     display: none;
   }
