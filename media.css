@@ -1,0 +1,22 @@
+@media screen and (max-width: 1000px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header .button-type,
+  .header .buffer-left,
+  .header .buffer-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header .nav-link {
+    display: none;
+  }
+  .header .phone-link {
+    color: white;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */

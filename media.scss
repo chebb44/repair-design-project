@@ -1,0 +1,23 @@
+@media screen and (max-width: 1000px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+    .button-type,
+    .buffer-left,
+    .buffer-right{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    .nav-link{
+      display: none;
+    }
+    .phone-link{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

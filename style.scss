@@ -8,6 +8,7 @@
   color: darkblue;
   padding: 3px;
 }
+
 body *{
   box-sizing: border-box;
 }
@@ -19,7 +20,11 @@ body *{
 a{
   text-decoration: none;
   text-transform: uppercase;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
+
 .button-type {
   display: inline-block;
   text-align: center;
@@ -27,6 +32,7 @@ a{
   background-color: #E3B873;
   border-radius: 5px;
 }
+
 .button-type_one{
   font-size: 15px;
   font-family: FuturaDemiC;
@@ -34,8 +40,9 @@ a{
 }
 
 .site-wrapper{
-  width: 1440px;
-  //width: 95%;
+  //width: 1440px;
+  width: 100%;
+  min-width: 375px;
   margin: 0 auto;
   //height: 10150px;
   //@include bord (yellow);
@@ -44,30 +51,55 @@ a{
 .header{
   height: 85px;
   width: 100%;
-  padding-left: 80px;
-  padding-right: 100px;
+  //padding-left: 80px;
+  //padding-right: 100px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #131313;
+  .buffer-left{
+    width: 80px;
+    flex-shrink: 100;
+    height: 10px;
+  }
+  .buffer-right{
+    width: 100px;
+    flex-shrink: 100;
+    height: 10px;
+  }
   .button-type{
     width: 160px;
     height: 37px;
     line-height: 37px;
+    flex-shrink: 0;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .nav-link{
     font-family: FuturaBookC;
     color: white;
+    flex-shrink: 0;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   h1{
     color: #E3B873;
     font-family: FuturaDemiC;
+    flex-shrink: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .home{
+    color: #E3B873;
   }
   .phone-link{
     color: #E3B873;
     font-family: FuturaDemiC;
     text-decoration: underline;
+    flex-shrink: 0;
+    padding-right: 7px;
+    padding-left: 7px;
   }
 }
 
@@ -258,3 +290,7 @@ a{
   height: 132px;
   width: 100%;
 }
+
+//@import "reset.css";
+//@import "fonts.css";
+// @import "media.scss";
