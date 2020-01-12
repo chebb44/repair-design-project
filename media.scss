@@ -28,6 +28,9 @@
   }
   .flex-container_one{ 
     height: 480px;
+    .scroll-down-block{
+      display: none;
+    }
     .sidebar-left{
       display: none;
     }
@@ -147,5 +150,12 @@
       display: none;
     }
   }
-
+  .container_three-one{
+    height: 390px;
+     .video {
+      width: 340px;
+      height: 207px;
+      position: relative;
+    }
+  }
 }

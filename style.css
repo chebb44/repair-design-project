@@ -491,9 +491,56 @@ body * {
   cursor: pointer;
 }
 
-.container_three {
+.container_three-one {
   width: 100%;
-  height: 1100px;
+  height: 640px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131313)), -webkit-gradient(linear, left top, left bottom, from(white));
+  background: linear-gradient(#131313), linear-gradient(white);
+  background-size: 100% 420px, 100% 220px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_three-one .head {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container_three-one .video {
+  width: 814px;
+  height: 434px;
+  position: relative;
+}
+
+.container_three-one .video-frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 434px;
+}
+
+.container_three-two {
+  width: 100%;
+  height: 460px;
 }
 
 .container_four {

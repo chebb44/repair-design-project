@@ -27,6 +27,9 @@
   .flex-container_one {
     height: 480px;
   }
+  .flex-container_one .scroll-down-block {
+    display: none;
+  }
   .flex-container_one .sidebar-left {
     display: none;
   }
@@ -151,6 +154,14 @@
   }
   .flex-container_two .column-right {
     display: none;
+  }
+  .container_three-one {
+    height: 390px;
+  }
+  .container_three-one .video {
+    width: 340px;
+    height: 207px;
+    position: relative;
   }
 }
 /*# sourceMappingURL=media.css.map */
