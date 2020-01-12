@@ -8,6 +8,13 @@
       display: none;
     }
   }
+  .container_three-two #form_one {
+    width: 80%;
+    height: 115px;
+    .button-type{
+        order: 4;
+      }
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -156,6 +163,51 @@
       width: 340px;
       height: 207px;
       position: relative;
+    }
+  }
+  .container_three-two{
+    background: linear-gradient(#131313), linear-gradient(white) ;
+    background-size: 100% 440px, 100% 50px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    .text-block{
+      font-family: FuturaBookC;
+      font-size: 14px;
+      line-height: 169.8%;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    #form_one{
+      width:90%;
+      height: 250px;
+      .name,
+      .tel{
+        width: 100%;
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 20px;
+      }
+      input[type='text'],
+      input[type='tel']{
+        background: none;
+        color: white;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+        &::placeholder{
+          color: white;
+        }
+      }
+      .mycheckbox__descr{
+        font-family: FuturaBookC;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+      }
+      .button-type{
+        order: 4;
+        width: 100%;
+      }
     }
   }
 }

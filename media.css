@@ -8,6 +8,15 @@
   .header .buffer-right {
     display: none;
   }
+  .container_three-two #form_one {
+    width: 80%;
+    height: 115px;
+  }
+  .container_three-two #form_one .button-type {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -162,6 +171,67 @@
     width: 340px;
     height: 207px;
     position: relative;
+  }
+  .container_three-two {
+    background: -webkit-gradient(linear, left top, left bottom, from(#131313)), -webkit-gradient(linear, left top, left bottom, from(white));
+    background: linear-gradient(#131313), linear-gradient(white);
+    background-size: 100% 440px, 100% 50px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+  }
+  .container_three-two .text-block {
+    font-family: FuturaBookC;
+    font-size: 14px;
+    line-height: 169.8%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .container_three-two #form_one {
+    width: 90%;
+    height: 250px;
+  }
+  .container_three-two #form_one .name,
+  .container_three-two #form_one .tel {
+    width: 100%;
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+  }
+  .container_three-two #form_one input[type='text'],
+  .container_three-two #form_one input[type='tel'] {
+    background: none;
+    color: white;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  }
+  .container_three-two #form_one input[type='text']::-webkit-input-placeholder,
+  .container_three-two #form_one input[type='tel']::-webkit-input-placeholder {
+    color: white;
+  }
+  .container_three-two #form_one input[type='text']:-ms-input-placeholder,
+  .container_three-two #form_one input[type='tel']:-ms-input-placeholder {
+    color: white;
+  }
+  .container_three-two #form_one input[type='text']::-ms-input-placeholder,
+  .container_three-two #form_one input[type='tel']::-ms-input-placeholder {
+    color: white;
+  }
+  .container_three-two #form_one input[type='text']::placeholder,
+  .container_three-two #form_one input[type='tel']::placeholder {
+    color: white;
+  }
+  .container_three-two #form_one .mycheckbox__descr {
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  .container_three-two #form_one .button-type {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=media.css.map */
