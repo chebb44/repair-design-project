@@ -8,6 +8,9 @@
   .header .buffer-right {
     display: none;
   }
+}
+
+@media screen and (max-width: 1200px) {
   .container_three-two #form_one {
     width: 80%;
     height: 115px;
