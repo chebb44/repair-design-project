@@ -72,5 +72,85 @@
   .flex-container_one .content-section .content-container .button-flex-container .button-type_one:nth-of-type(2) {
     margin-left: 0;
   }
+  .flex-container_two {
+    height: 690px;
+  }
+  .flex-container_two .column-left {
+    padding: 5px;
+    padding-top: px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .flex-container_two .column-left .text-head {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.07em;
+    padding: 0;
+  }
+  .flex-container_two .column-left .text-head::after {
+    display: none;
+  }
+  .flex-container_two .column-left .text-block {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .flex-container_two .column-left .charachter-box {
+    width: 95%;
+  }
+  .flex-container_two .column-left .charachter-box .charachter-item .head {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+  .flex-container_two .column-left .charachter-box .charachter-item .text {
+    font-family: FuturaBookC;
+    font-size: 14px;
+    line-height: 135.84%;
+    color: #FFFFFF;
+  }
+  .flex-container_two .column-left .slider {
+    display: none;
+  }
+  .flex-container_two .column-left .mobile-slider {
+    position: relative;
+    display: block;
+    width: 94%;
+  }
+  .flex-container_two .column-left .mobile-slider .pic {
+    width: 100%;
+  }
+  .flex-container_two .column-left .mobile-slider .arrow {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+  }
+  .flex-container_two .column-left .mobile-slider .arrow:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  .flex-container_two .column-left .mobile-slider .arrow-right {
+    right: 10px;
+    background-image: url(assets/arrow-right_one.svg);
+  }
+  .flex-container_two .column-left .mobile-slider .arrow-left {
+    left: 10px;
+    background-image: url(assets/arrow-left_one.svg);
+  }
+  .flex-container_two .column-right {
+    display: none;
+  }
 }
 /*# sourceMappingURL=media.css.map */
