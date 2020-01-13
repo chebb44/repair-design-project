@@ -136,11 +136,11 @@
         </div>
         <div class="tel">
           Phone:<br>
-          <input type="tel" name="name" id="name" required placeholder="Your phone number:">
+          <input type="tel" name="name" id="name" required placeholder="Your phone number:" pattern="(\+79[0-9]{9}|8[0-9]{10})">
         </div>
         <input type="submit" value="SUBMIT" class="button-type button-type_one link">
         <label class="mycheckbox">
-          <input class="mycheckbox__default" type="checkbox">
+          <input class="mycheckbox__default" type="checkbox" required>
           <div class="mycheckbox__new"></div>
           <div class="mycheckbox__descr">I agree to the processing of personal data</div>
         </label>
@@ -206,8 +206,60 @@
       </div>
     </div>
     <div class="flex-container_five">
-      <div class="column-left">column-left</div>
-      <div class="column-right">column-right</div>
+      <div class="column-left">
+        <div class="circle">circle</div>
+        <div class="circle-item  circle-item_one">
+          <div class="image-number">01</div>
+          <span>
+            Our specialist will arrive for measurements 
+            per day contact, 
+            or appoint a date convenient for you
+          </span>
+        </div>
+        <div class="circle-item circle-item_two">
+          <div class="image-number">02</div>
+          <span>Free metering</span>
+        </div>
+        <div class="circle-item circle-item_three">
+          <div class="image-number">03</div>
+          <span>
+            Free consultation
+          </span>
+        </div>
+        <div class="circle-item circle-item_four">
+          <div class="image-number">04</div>
+          <span>Get a cost estimate and<br> the timing of your future repairs</span>
+        </div>
+      </div>
+      <div class="column-right">
+        <form action="#" id="form_two">
+          <div class="head">
+            Leave a request for free departure of the measurer
+          </div>
+          <div class="name">
+            Name:<br>
+            <input type="text" name="name" id="name" required placeholder="What is your name:">
+          </div>
+          <div class="tel">
+            Phone:<br>
+            <input type="tel" name="name" id="name" required placeholder="Your phone number:" pattern="(\+79[0-9]{9}|8[0-9]{10})">
+          </div>
+          <div class="email">
+            Email:<br>
+            <input type="email" name="email" id="email" required placeholder="Your email">
+          </div>
+          <label class="mycheckbox">
+            <input class="mycheckbox__default" type="checkbox" required>
+            <div class="mycheckbox__new"></div>
+            <div class="mycheckbox__descr">I agree to the processing of personal data</div>
+          </label>
+          <input type="submit" value="Call the measurer" class="button-type button-type_one link upper-case">
+        </form>
+        <div class="economy-block">
+          <img src="assets/pig.svg" alt="pig">
+          <span>Help save 10 - 20% of the cost of materials</span>
+        </div>
+      </div>
     </div>
     <div class="flex-container_six">
       <div class="column-left">column-left</div>

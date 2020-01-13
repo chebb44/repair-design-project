@@ -45,10 +45,6 @@
   .flex-container_one .sidebar-left {
     display: none;
   }
-  .flex-container_one .content-section {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("assets/image 4.7.png");
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("assets/image 4.7.png");
-  }
   .flex-container_one .content-section .content-container {
     padding-right: 15px;
     padding-left: 15px;
@@ -262,6 +258,9 @@
     line-height: 40px;
     left: 0;
     font-size: 15px;
+  }
+  .flex-container_five {
+    display: none;
   }
 }
 /*# sourceMappingURL=media.css.map */
