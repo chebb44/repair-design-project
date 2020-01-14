@@ -247,4 +247,57 @@
   .flex-container_five{
     display: none;
   }
+  .container-six-mobile-wrap{
+    background: linear-gradient(white), linear-gradient(#131313) ;
+    background-size: 100% 220px, 100% 175px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    display: flex;
+    .container-six-mobile{
+      margin: auto;
+      padding-bottom: 50px;
+      height: 395px; 
+      .head{
+        padding-bottom: 30px;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        color: #E3B873;
+
+      }
+      .mobile-slider{
+        position: relative;
+        margin: auto  ;
+        display: block;
+        width: 94%;
+        .pic{
+          width: 100%;
+        }
+        .arrow{
+        width: 36px;
+        height: 36px;
+        
+        background-size: cover;
+        position: absolute;
+        top:50%;
+        margin-top: -18px;
+          &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+          }
+        }
+        .arrow-right{
+            right: 10px;
+            background-image: url(assets/arrow-right_one.svg);
+        }
+        .arrow-left{
+            left: 10px;
+            background-image: url(assets/arrow-left_one.svg);
+        }
+      }
+    }
+  }
 }

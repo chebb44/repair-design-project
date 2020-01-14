@@ -13,3 +13,8 @@
     font-family: Yeseva One;
     src: url(assets/YesevaOne-Regular_v2.otf);
 }
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url(assets/ProximaNova-Regular.ttf);
+}
