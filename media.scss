@@ -300,4 +300,77 @@
       }
     }
   }
+  .container_seven{
+    .text-container{
+      width: 77%;
+      .head{
+          font-size: 22px;
+          line-height: 138.6%;
+          color: white;
+        }
+      .desription{
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 135.84%;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+    background: none;
+    background-color: #131313;
+    .flex-container_seven{
+      padding-left: 15px;
+      padding-right: 15px;
+      .flex-item{
+         &:nth-of-type(1){
+            height: 420px;
+            .descr-block{
+              height: 180px;
+            }
+          }
+          &:nth-of-type(2){
+            height: 485px;
+            .descr-block{
+              height: 240px;
+            }
+          }
+          &:nth-of-type(3){
+            height: 485px;
+            .descr-block{
+              height: 240px;
+            }
+          }
+          .hide{
+            display: none;
+          }
+        //height: 490px;
+        .descr-block{
+          top: 220px;
+          .head{
+            font-size: 15px;
+            line-height: 138.6%;
+            
+          }
+          left: 0; 
+          right: auto;
+          .descr-list{
+            font-size: 13px;
+            line-height: 169.8%;
+            li{
+              .hide{
+                display: inline;
+              }
+            }
+          }
+        }
+        .price{
+        width: 190px;
+        height: 40px;
+        line-height: 40px;
+        left:0;
+        font-size: 15px;
+        }
+      }
+    }
+  }
 }
