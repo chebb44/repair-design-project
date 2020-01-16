@@ -373,4 +373,46 @@
       }
     }
   }
+  .container_nine{
+    background: none;
+    background-color: #131313;
+    .text-container_one{
+      .head{
+        font-size: 22px;
+        line-height: 138.6%;
+      }
+      .description{
+        font-size: 15px;
+        line-height: 135.84%;
+        width: 90%;
+      }
+    }
+    .text-container_two{
+      display: none;
+    }
+    .flex-container_nine{
+      padding-top: 0px;
+      .flex-item{
+        width: 305px;
+        height: 395px;
+        margin-left: 55px;
+        margin-right: 18px;
+        margin-top: 80px;
+        &:nth-child(1){
+          background-image: url(assets/image9.1-mob.png);
+        }
+        &:nth-child(2){
+          background-image: url(assets/image9.2-mob.png);
+        }
+        &:nth-child(3){
+          background-image: url(assets/image9.3-mob.png);
+        }
+        .logo{
+          top: -65px;
+          left: -55px;
+        }
+
+      }
+    }
+  }
 }

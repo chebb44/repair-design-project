@@ -1348,107 +1348,372 @@ body * {
 }
 
 .flex-container_eight {
-  border: 3px #5454c5 solid;
-  background-color: #d9d9f2;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
   width: 100%;
-  height: 655px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #131313;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1280px) {
+  .flex-container_eight {
+    display: none;
+  }
 }
 
 .flex-container_eight .column-left {
-  border: 3px brown solid;
-  background-color: #e69c9c;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
+  position: relative;
   -ms-flex-preferred-size: 490px;
       flex-basis: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 170px;
+}
+
+.flex-container_eight .column-left .top-left-block {
+  position: absolute;
+  width: 180px;
+  top: -90px;
+  left: 100px;
+}
+
+.flex-container_eight .column-left .top-left-block .head {
+  display: inline-block;
+  font-family: FuturaDemiC;
+  font-size: 15px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.flex-container_eight .column-left .top-left-block .content {
+  position: relative;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  color: #E3B873;
+}
+
+.flex-container_eight .column-left .top-left-block .content::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #E3B873;
+  right: -155px;
+  top: 50px;
+}
+
+.flex-container_eight .column-left .numbers {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.flex-container_eight .column-left .head {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  color: #E3B873;
+}
+
+.flex-container_eight .column-left .content {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.flex-container_eight .column-left .slider {
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.flex-container_eight .column-left .slider .item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.flex-container_eight .column-left .slider .item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.flex-container_eight .column-left .slider .circle {
+  position: relative;
+  top: -2px;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+.flex-container_eight .column-left .slider .active {
+  background: white;
 }
 
 .flex-container_eight .column-right {
-  border: 3px grey solid;
-  background-color: #d9d9d9;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
   -ms-flex-preferred-size: 950px;
       flex-basis: 950px;
 }
 
-.container_nine {
-  border: 3px #69d307 solid;
-  background-color: #c4fb91;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
+.flex-container_eight .column-right .flex-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  padding-right: 40px;
+}
+
+.flex-container_eight .column-right .flex-container .item {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin-bottom: 45px;
+}
+
+.flex-container_eight .column-right .flex-container .item .number {
+  display: inline-block;
+  position: relative;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 3px;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.flex-container_eight .column-right .flex-container .item .number::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+  left: 0;
+  background-color: #E3B873;
+}
+
+.flex-container_eight .column-right .flex-container .item .description {
+  display: block;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  width: 135px;
+}
+
+.container_nine {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131313)), -webkit-gradient(linear, left top, left bottom, from(white));
+  background: linear-gradient(#131313), linear-gradient(white);
+  background-size: 100% 50%, 100% 50%;
+  background-repeat: no-repeat no-repeat;
+  background-position: top, bottom;
 }
 
 .container_nine .text-container_one {
-  border: 3px #b48319 solid;
-  background-color: #f0d190;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
   width: 100%;
   height: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_nine .text-container_one .head {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container_nine .text-container_one .description {
+  width: 32%;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .container_nine .text-container_two {
-  border: 3px #b48319 solid;
-  background-color: #f0d190;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
   width: 100%;
   height: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_nine .text-container_two .description {
+  width: 580px;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
 }
 
 .container_nine .flex-container_nine {
-  border: 3px #8e45c9 solid;
-  background-color: #e2cff1;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
   width: 100%;
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
 
 .container_nine .flex-container_nine .flex-item {
-  border: 3px #b48319 solid;
-  background-color: #f0d190;
+  position: relative;
+  width: 272px;
+  height: 415px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_nine .flex-container_nine .flex-item:nth-child(1) {
+  background-image: url(assets/image9.1.png);
+}
+
+.container_nine .flex-container_nine .flex-item:nth-child(2) {
+  background-image: url(assets/image9.2.png);
+}
+
+.container_nine .flex-container_nine .flex-item:nth-child(3) {
+  background-image: url(assets/image9.3.png);
+}
+
+.container_nine .flex-container_nine .flex-item .logo {
+  position: absolute;
+  top: -55px;
+  left: -55px;
+}
+
+.container_nine .flex-container_nine .flex-item .description {
+  width: 235px;
+  height: 135px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+}
+
+.container_nine .flex-container_nine .flex-item .description .name {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
   text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
-  -ms-flex-preferred-size: 395px;
-      flex-basis: 395px;
+  color: #181818;
+}
+
+.container_nine .flex-container_nine .flex-item .description .special {
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #959595;
+}
+
+.container_nine .flex-container_nine .flex-item .description .experience {
+  width: 100%;
+  height: 45px;
+  background-color: #E3B873;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .container_ten {
