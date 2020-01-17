@@ -423,5 +423,8 @@
     top: -65px;
     left: -55px;
   }
+  .container_ten {
+    display: none;
+  }
 }
 /*# sourceMappingURL=media.css.map */

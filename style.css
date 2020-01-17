@@ -1717,68 +1717,225 @@ body * {
 }
 
 .container_ten {
-  border: 3px #ff0808 solid;
-  background-color: #ffbbbb;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
   width: 100%;
+  background-color: white;
 }
 
 .container_ten .text-container {
-  border: 3px #b48319 solid;
-  background-color: #f0d190;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
   width: 100%;
-  height: 225px;
-}
-
-.container_ten .flex-container_ten {
-  border: 3px #8e45c9 solid;
-  background-color: #e2cff1;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
-  width: 100%;
-  height: 525px;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container_ten .text-container .head {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #181818;
+}
+
+.container_ten .text-container .description {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+
+.container_ten .flex-container_ten {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  padding-bottom: 50px;
 }
 
 .container_ten .flex-container_ten .flex-item {
-  border: 3px #b48319 solid;
-  background-color: #f0d190;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
-  -ms-flex-preferred-size: 395px;
-      flex-basis: 395px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 375px;
+      flex-basis: 375px;
+  height: 455px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white));
+  background: linear-gradient(white);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 428px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
-.container_twelve {
-  border: 3px #54c590 solid;
-  background-color: #d9f2e7;
-  text-align: center;
+.container_ten .flex-container_ten .flex-item .photo {
+  border-radius: 50%;
+  display: inline-block;
   vertical-align: middle;
-  font-size: 20px;
-  color: darkblue;
-  padding: 3px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.container_ten .flex-container_ten .flex-item .name {
+  display: inline-block;
+  width: 155px;
+  vertical-align: middle;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+}
+
+.container_ten .flex-container_ten .flex-item .story {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 180%;
+  color: #959595;
+  text-transform: lowercase;
+  margin-left: 20px;
+}
+
+.container_ten .flex-container_ten .flex-item .volume {
+  width: 295px;
+  height: 55px;
+  padding-right: 35px;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E3B873;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.container_ten .flex-container_ten .flex-item .volume .square {
+  margin-left: -20px;
+  position: relative;
+}
+
+.container_ten .flex-container_ten .flex-item .volume .square::after {
+  content: '';
+  width: 1px;
+  height: 55px;
+  background-color: white;
+  position: absolute;
+  right: -12px;
+  top: -15px;
+}
+
+.container_ten .flex-container_ten .flex-item .volume .days {
+  margin-left: -20px;
+}
+
+.container-eleven {
   width: 100%;
-  height: 1260px;
+  height: 1250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(white)), -webkit-gradient(linear, left top, left bottom, from(#131313));
+  background: linear-gradient(white), linear-gradient(#131313);
+  background-size: 100% 24%, 100% 76%;
+  background-repeat: no-repeat no-repeat;
+  background-position: top, bottom;
+}
+
+.container-eleven .form-three-wrap {
+  width: 880px;
+  height: 450px;
+  background-color: #131313;
+}
+
+.container-eleven .form-three-wrap form {
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+}
+
+.container-eleven .form-three-wrap form .head {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container-eleven .adress-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-eleven .adress-block .adress {
+  width: 495px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #E3B873;
+  margin-bottom: 30px;
 }
 
 .footer {
