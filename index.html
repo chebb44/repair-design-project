@@ -587,20 +587,42 @@
           <div class="head upper-case">
             have any questions?
           </div>
-
+          <div class="wrap">
+            <div class="name">
+              Name:<br>
+              <input type="text" name="name" id="name" required placeholder="What is your name:">
+            </div>
+            <div class="tel">
+              Phone:<br>
+              <input type="tel" name="name" id="name" required placeholder="Your phone number:" pattern="(\+79[0-9]{9}|8[0-9]{10})">
+            </div>
+          </div>
+          <div class="question">
+            Question:<br>
+            <input type="text" name="question" id="question" required placeholder="I want to know:">
+          </div>
+          <label class="mycheckbox">
+            <input class="mycheckbox__default" type="checkbox" required>
+            <div class="mycheckbox__new"></div>
+            <div class="mycheckbox__descr">I agree to the processing of personal data</div>
+          </label>
+          <input type="submit" value="SUBMIT" class="button-type button-type_one link">
         </form>
+      </div>
+      <div class="mobile-map">
+        <img src="assets/mobile-map.png" alt="mobile-map">
       </div>
       <div class="adress-block">
         <div class="adress">
           Rostov-on-Don, Nansen St., 
-          239 Shopping Center Decorum Tel +7 (928) 768 32 29
+          239 Shopping Center Decorum<br class="mobile-br" > Tel +7 (928) 768 32 29
         </div>
         <div class="pics">
           <img src="assets/mail.svg" alt="mail">
           <img src="assets/insta.svg" alt="insta">
         </div>
       </div>
-      <img src="assets/map.png" alt="map">
+      <img class="pc-map" src="assets/map.png" alt="map">
     </div>
     <div class="footer">
       footer

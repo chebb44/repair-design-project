@@ -1449,19 +1449,35 @@ color: #181818;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(white), linear-gradient(#131313);
-  background-size: 100% 24%, 100% 76%;
-  background-repeat: no-repeat no-repeat;
-  background-position: top, bottom;
+  background: linear-gradient(white), linear-gradient(rgba(19, 19, 19, 0.95)), url(assets/background-eleven.png);
+  background-size: 100% 24%, 100% 76%, auto auto;
+  background-repeat: no-repeat no-repeat, no-repeat;
+  background-position: top, bottom, bottom;
+  @media screen and (max-width: 850px) {
+    background: none;
+    background-color: #131313;
+    height: auto;
+  }
   
   .form-three-wrap{
-    width: 880px;
+    width: 61%;
     height: 450px;
     background-color: #131313;
+    @media screen and (max-width: 850px) {
+      width: 90%;
+      height: auto;
+    }
     form{
-      border: 2px solid red;
       width: 100%;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      @media screen and (max-width: 850px) {
+        justify-content: center;
+      }
+
       .head{
         font-family: Yeseva One;
         font-style: normal;
@@ -1470,7 +1486,95 @@ color: #181818;
         line-height: 28px;
         text-align: center;
         color: #FFFFFF;
+        @media screen and (max-width: 850px) {
+          margin-bottom: 30px;
+        }
       }
+      .name,
+      .tel,
+      .question{
+        position: relative;
+        font-family: FuturaBookC;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 20px;
+        
+      }
+      .name,
+      .tel{
+        @media screen and (max-width: 850px) {
+          margin-bottom: 30px;
+        }
+      }
+      .name,
+      .tel{
+        width: 230px;
+        @media screen and (max-width: 850px) {
+          width: 100%;
+        }
+      }
+      input[type='text'],
+      input[type='tel'],
+      input[type='email']{
+        position: relative;
+        width: 100%;
+        border: none;
+        font-family: FuturaBookC;
+        font-size: 18px;
+        line-height: 24px;
+        background: none;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        &::placeholder{
+          color: white;
+        }
+      }
+      .mycheckbox__descr{
+        font-family: FuturaBookC;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+      }
+      .mycheckbox{
+        @media screen and (max-width: 850px) {
+          align-self: flex-start;
+          margin-bottom: 70px;
+        }
+      }
+      .button-type{
+        height: 51px;
+        width: 213px;
+        @media screen and (max-width: 850px) {
+          width: 100%;
+        }
+        //align-self: flex-end;
+      }
+      .wrap{
+        width: 58%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media screen and (max-width: 850px) {
+          width: 100%;
+        }
+      }
+      .question{
+        width: 58%;
+        @media screen and (max-width: 850px) {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+  .mobile-map{
+    display: none;
+    @media screen and (max-width: 850px) {
+      display: block;
+      width: 90%;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
   }
   .adress-block{
@@ -1488,6 +1592,30 @@ color: #181818;
       text-align: center;
       color: #E3B873;
       margin-bottom: 30px;
+      @media screen and (max-width: 850px) {
+        width:100%;
+        margin-bottom: 10px;
+      }
+      .mobile-br{
+        display: none;
+        @media screen and (max-width: 850px) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .pics{
+    img{
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    @media screen and (max-width: 850px) {
+      margin-bottom: 30px;
+    }
+  }
+  .pc-map{
+    @media screen and (max-width: 850px) {
+      display: none;
     }
   }
 }
@@ -1496,6 +1624,9 @@ color: #181818;
   @include bord(rgb(67, 118, 212));
   height: 132px;
   width: 100%;
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
 }
 
 //@import "reset.css";
