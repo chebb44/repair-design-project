@@ -1,11 +1,15 @@
 @media screen and (max-width: 1000px) {
-  .header {
+  .header,
+  .footer {
     padding-left: 10px;
     padding-right: 10px;
   }
   .header .button-type,
   .header .buffer-left,
-  .header .buffer-right {
+  .header .buffer-right,
+  .footer .button-type,
+  .footer .buffer-left,
+  .footer .buffer-right {
     display: none;
   }
 }
@@ -26,14 +30,21 @@
   .site-wrapper {
     width: 375px;
   }
-  .header .nav-link {
+  .header .nav-link,
+  .footer .nav-link {
     display: none;
   }
-  .header .phone-link {
+  .header .phone-link,
+  .footer .phone-link {
     color: white;
     text-decoration: none;
   }
-  .header h1, .header .phone-link {
+  .header h1,
+  .header .title,
+  .header .phone-link,
+  .footer h1,
+  .footer .title,
+  .footer .phone-link {
     font-size: 13px;
   }
   .flex-container_one {

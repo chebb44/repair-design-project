@@ -1,5 +1,6 @@
 @media screen and (max-width: 1000px) {
-  .header {
+  .header,
+  .footer {
     padding-left: 10px;
     padding-right: 10px;
     .button-type,
@@ -25,7 +26,8 @@
   .site-wrapper{
     width: 375px;
   }
-  .header {
+  .header,
+  .footer {
     .nav-link{
       display: none;
     }
@@ -33,7 +35,9 @@
       color: white;
       text-decoration: none;
     }
-    h1, .phone-link{
+    h1,
+    .title,
+    .phone-link{
       font-size: 13px;
     }
   }
